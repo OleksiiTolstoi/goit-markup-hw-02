@@ -66,6 +66,9 @@ body {
   color: var(--title-text-color);
 }
 
+.site-nav .link.current {
+  color: var(--accent-color);
+}
 .site-nav :hover,
 .site-nav :focus {
   color: var(--accent-color);
