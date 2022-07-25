@@ -109,6 +109,7 @@ body {
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
+  cursor: pointer;
 }
 .hero-btn:hover,
 .hero-btn:focus {
@@ -216,6 +217,7 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
+  cursor: pointer;
 }
 
 .filter-btn :hover,
@@ -240,4 +242,7 @@ body {
   letter-spacing: 0.03em;
 
   color: #757575;
+}
+.btn {
+  cursor: pointer;
 }
