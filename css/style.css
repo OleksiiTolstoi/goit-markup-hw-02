@@ -1,7 +1,7 @@
 :root {
   --primary-text-color: #757575;
   --title-text-color: #212121;
-  --accent-color: #2196f3;
+  --accent-color: #188ce8;
   --background-color: #ffffff;
   --primary-bg-color: #2196f3;
 }
@@ -99,7 +99,7 @@ body {
 }
 .hero-btn {
   color: var(--background-color);
-  background-color: var(--accent-color);
+  background-color: var(--primary-bg-color);
   font-family: inherit;
   font-style: normal;
   font-weight: 700;
@@ -109,10 +109,12 @@ body {
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
+  cursor: pointer;
 }
 .hero-btn:hover,
 .hero-btn:focus {
-  color: var(--title-text-color);
+  color: var(--accent-color);
+  background-color: var(--primary-bg-color);
 }
 .hero-title {
   font-weight: 900;
@@ -210,6 +212,7 @@ body {
 
 /* Страница Портфолио*/
 .filter-btn .list {
+  cursor: pointer;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.63;
