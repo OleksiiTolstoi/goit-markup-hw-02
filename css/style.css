@@ -24,7 +24,6 @@ body {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-  outline: 2px solid tomato;
 }
 
 .list {
@@ -272,6 +271,7 @@ body {
   background-color: var(--background-color);
 }
 .team-work {
+  padding-bottom: 30px;
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
@@ -325,11 +325,11 @@ body {
 }
 .footer-contacts {
   display: block;
-  padding-bottom: 60px;
+  padding-bottom: 51px;
 }
 .footer-adress {
   padding-top: 20px;
-  padding-bottom: 9px;
+  margin-bottom: 9px;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
@@ -337,7 +337,7 @@ body {
   color: #ffffff;
 }
 .footer-info {
-  padding-bottom: 9px;
+  margin-bottom: 9px;
 }
 
 .footer-contacts :hover,
