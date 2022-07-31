@@ -53,9 +53,6 @@ body {
   margin: -1px;
 }
 /**/
-.page-header {
-  border-bottom: 2px;
-}
 .logo:hover,
 .logo:focus {
   color: var(--accent-color);
@@ -96,10 +93,12 @@ body {
   margin-left: 93px;
   padding-right: 0;
 }
+.page-header {
+  border-bottom: 1px solid #eeee;
+}
 .main-nav {
   display: flex;
   align-items: center;
-  justify-content: ;
 }
 .site-nav .item {
   padding-top: 32px;
@@ -349,7 +348,10 @@ body {
 /* Страница Портфолио*/
 .filter {
   display: flex;
-  text-align: center;
+  padding-top: 96px;
+  justify-content: center;
+  margin-bottom: 50px;
+  column-gap: 8px;
 }
 .filter-btn .list {
   cursor: pointer;
@@ -359,8 +361,15 @@ body {
   background-color: var(--accent-color);
   color: var(--background-color);
 }
-
+.examples-next {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding-bottom: 92px;
+}
 .examples-title {
+  margin-top: 20px;
+  margin-bottom: 4px;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
@@ -369,12 +378,19 @@ body {
   letter-spacing: 0.06em;
   color: #212121;
 }
+.examples-next .item {
+  width: 370px;
+  height: 404px;
+  border: 1px solid #ececec;
+}
 .examples-discription {
-  margin-bottom: 0;
+  margin-top: 0;
+  margin-bottom: 20px;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
+  width: 322px;
 
   color: #757575;
 }
