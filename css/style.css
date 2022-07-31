@@ -57,6 +57,8 @@ body {
   color: var(--accent-color);
 }
 .logo span {
+  padding-top: 25px;
+  padding-bottom: 25px;
   font-family: "Raleway";
   font-weight: 700;
   font-size: 26px;
@@ -64,6 +66,8 @@ body {
   color: var(--accent-color);
 }
 .logo {
+  padding-top: 25px;
+  padding-bottom: 25px;
   color: black;
   font-family: "Raleway";
   font-style: normal;
@@ -76,8 +80,18 @@ body {
 /* #F5F4FA  цвет фона*/
 
 /* Navigation*/
+
 .site-nav {
   display: flex;
+  margin: 0;
+  padding-left: 0;
+}
+.site-nav .item {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+.site-nav .item + .item {
+  margin-left: 50px;
 }
 .site-nav .link.current {
   color: var(--accent-color);
@@ -95,7 +109,15 @@ body {
 .site-nav :focus {
   color: var(--accent-color);
 }
+.contacts {
+  display: flex;
+}
+.contacts li:not(:last-child) {
+  margin-right: 0;
+}
+
 .contacts list link {
+  display: flex;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
@@ -103,6 +125,13 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
+}
+.contacts .item {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+.contacts .item + .item {
+  margin-left: 50px;
 }
 .contacts-item {
   font-family: "Roboto";
@@ -130,13 +159,14 @@ body {
   color: var(--title-text-color);
 }
 .hero {
-  margin-left: auto;
-  margin-right: auto;
+  padding-top: 200px 0;
+
   text-align: center;
   background-color: #2f303a;
 }
 .hero-btn {
-  display: flex;
+  margin-bottom: 205px;
+  display: inline-block;
   border-radius: 4px;
   padding: 10px 32px;
   color: var(--background-color);
@@ -155,10 +185,10 @@ body {
   background-color: #188ce8;
 }
 .hero-title {
-  display: inline-block;
   margin-top: 0;
   margin-bottom: 30px;
-
+  margin-left: auto;
+  margin-right: auto;
   padding-top: 200px;
   max-width: 695px;
   font-weight: 900;
@@ -294,6 +324,7 @@ body {
   color: #212121;
 }
 .examples-discription {
+  margin-bottom: 0;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.88;
