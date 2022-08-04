@@ -138,8 +138,14 @@ img {
 .site-nav .item:not(:last-child) {
   margin-right: 50px;
 }
-
+.header-icons {
+  margin-right: 10px;
+  fill: #757575;
+}
 .contacts-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
@@ -151,10 +157,14 @@ img {
 .contacts .item + .item {
   margin-left: 50px;
 }
-.contacts :hover,
-.contacts :focus {
+.contacts-item :hover {
+  fill: var(--accent-color);
+}
+.contacts .item :hover,
+.contacts .item :focus {
   color: var(--accent-color);
 }
+
 .section-title {
   display: block;
   margin-top: 0;
@@ -167,10 +177,19 @@ img {
   color: var(--title-text-color);
 }
 .hero {
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
   padding-top: 200px;
   padding-bottom: 200px;
   text-align: center;
-  background-color: #2f303a;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/hero.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .hero-btn {
   margin-bottom: 0;
